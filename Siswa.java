@@ -7,16 +7,12 @@ public class Siswa {
     //Constructor
     //nama harus sama dgn class
 
-    public Siswa(int id, String nama, double ipk) {
+    public Siswa() {
         id = 0;
         nama = "kosong";
         ipk = 0.0;
         
     }
-
-    public Siswa() {
-        //TODO Auto-generated constructor stub
-    }
-    }
+}
     
 
