@@ -6,17 +6,47 @@ public class DVD extends Product {
     private String rating;
     private String studio;
 
+    public int getLength() {
+        return this.length;
+    }
+
+    public void setLength(int length) {
+        this.length = length;
+    }
+
+    public String getRating() {
+        return this.rating;
+    }
+
+    public void setRating(String rating) {
+        this.rating = rating;
+    }
+
+    public String getStudio() {
+        return this.studio;
+    }
+
+    public void setStudio(String studio) {
+        this.studio = studio;
+    }
+
     public DVD () {
-        number = 10;
-        name = "DVD Selamat Siang";
-        quantity = 100;
-        price = 20000.0;
+        super();
         length = 60;
         rating = "PG";
         studio = "NewLine";
 
     } 
-    public void DVDprint () {
+    public DVD (int length, String rating, String studio) {
+        
+        this.length = length;
+        this.rating = rating;
+        this.studio = studio;
+    }
+
+    @Override
+    public void print () {
+        super.print();  //To call the print method of the superclass
         System.out.println("Number : " + number);
         System.out.println("Name : " + name);
         System.out.println("Quantity : " + quantity);
